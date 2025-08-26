@@ -1,0 +1,164 @@
+html {
+    background: #b6dbc8;
+    background: linear-gradient(270deg, rgba(182, 219, 200, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 87%, rgba(156, 219, 183, 1) 100%);
+    font-family: "JetBrains Mono", monospace;
+    color: rgb(12, 15, 2);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: auto;
+    gap: 6%;
+    margin-top: -10px;
+}
+
+
+p {
+    padding: 10px;
+    color: rgb(12, 15, 2);
+    font-size: 20px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.tituloTexto {
+    margin-left: 50px;
+    margin-right: 100px;
+    width: 300px;
+    margin-bottom: -50px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 50px;
+    margin-right: 15%;
+    color: rgb(12, 15, 2);
+    width: 300px;
+}
+
+.subTexto {
+    font-size: 20px;
+    color: rgb(12, 15, 2);
+    margin-top: -45px;
+    margin-left: 150px;
+    transition: 0.2s;
+}
+.subTexto:hover {
+    transform: scale(1.05,1.05);
+}
+
+button {
+    align-items: center;
+    appearance: none;
+    background-color: #41bd54;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(129, 127, 133, 0.616) 0 2px 4px, rgba(150, 148, 155, 0.884) 0 7px 13px -3px, rgb(143, 145, 139) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: beige;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    white-space: nowrap;
+    font-size: 18px;
+    width: 12%;
+    margin-top: 40px;
+}
+
+.button-30:focus {
+    box-shadow: rgba(129, 127, 133, 0.616) 0 2px 4px, rgba(150, 148, 155, 0.884) 0 7px 13px -3px, rgb(143, 145, 139) 0 -3px 0 inset;
+}
+.button-30:hover {
+    box-shadow: rgba(129, 127, 133, 0.616) 0 2px 4px, rgba(150, 148, 155, 0.884) 0 7px 13px -3px, rgb(143, 145, 139) 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+.button-30:active {
+    transition: box-shadow 0.15s ease, transform 0.1s ease;
+    box-shadow: #458536 0 3px 7px inset;
+    transform: translateY(1px);
+}
+
+h3 {
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: rgb(12, 15, 2);
+}
+
+.instagram,
+.github,
+.linkedin{
+    width: 40px;
+    color: rgb(73, 66, 66);
+    transition: color 0.2s;
+}
+
+.instagram:hover,
+.github:hover,
+.linkedin:hover{
+    color: rgb(27, 25, 25);
+}
+
+.Linguagens,
+.Matematica,
+.Humanas,
+.Natureza{
+    border: solid;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 50px;
+    color: #41bd54;
+}
+.materias {
+    display: grid;
+    grid-template-columns: repeat(2, 100px); /* duas colunas */
+    grid-gap: 160px;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    
+  }
+  a{
+    color: transparent;
+  }
+  .materias svg {
+    width: 80px;
+    height: 80px;
+    border: solid;
+    padding: 10px;
+    color: #41bd54;
+    transition: transform 0.2s;
+    -webkit-box-shadow: 10px 26px 56px -14px rgba(73,166,110,1);
+-moz-box-shadow: 10px 26px 56px -14px rgba(73,166,110,1);
+box-shadow: 10px 26px 56px -14px rgba(73,166,110,1);
+  }
+  
+  .materias svg:hover {
+    transform: translateY(-2.5px);
+    cursor: pointer;
+  }
+
+  .materias svg:active{
+    transform: translateY(2.5px);
+  }
+
+.textos{
+    color: #41bd54;
+    margin: auto;
+}
