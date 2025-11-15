@@ -1,5 +1,5 @@
 function goInicial() {
-    window.location.href = "../paginaPrincipal.html"
+    window.location.href = "../index.html"
     }   
     function goEnsinoMedio() {
         window.location.href = "../EnsinoMedio/EnsinoMedio.html"

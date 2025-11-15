@@ -1,0 +1,406 @@
+html {
+        background: #b6dbc8;
+        background: linear-gradient(270deg, rgba(182, 219, 200, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 87%, rgba(156, 219, 183, 1) 100%);
+        font-family: "JetBrains Mono", monospace;
+        color: rgb(12, 15, 2);
+    }
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: auto;
+    gap: 6%;
+    margin-top: -10px;
+}
+
+.introducao {
+    border: rgb(12, 15, 2) solid;
+    border-width: 2px;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.introducao img {
+    flex: 1;
+    margin-right: 50px;
+    max-width: 30%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.introducao img:hover {
+    transform: translateY(-2.5px);
+}
+
+.introducao p {
+    flex: 2; 
+    font-size: 20px;
+}
+  
+p {
+    padding: 10px;
+    color: rgb(12, 15, 2);
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.tituloTexto {
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 50px;
+    margin-right: 15%;
+    color: rgb(12, 15, 2);
+}
+
+.subTexto {
+    font-size: 20px;
+    color: rgb(12, 15, 2);
+    margin-top: -5px;
+    margin-left: 150px;
+    transition: 0.2s;
+}
+.subTexto:hover {
+    transform: scale(1.05,1.05);
+}
+
+button {
+    align-items: center;
+    appearance: none;
+    background-color: #41bd54;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(129, 127, 133, 0.616) 0 2px 4px, rgba(150, 148, 155, 0.884) 0 7px 13px -3px, rgb(143, 145, 139) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: beige;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    white-space: nowrap;
+    font-size: 18px;
+    width: 10%;
+}
+
+.button-30:focus {
+    box-shadow: rgba(129, 127, 133, 0.616) 0 2px 4px, rgba(150, 148, 155, 0.884) 0 7px 13px -3px, rgb(143, 145, 139) 0 -3px 0 inset;
+}
+.button-30:hover {
+    box-shadow: rgba(129, 127, 133, 0.616) 0 2px 4px, rgba(150, 148, 155, 0.884) 0 7px 13px -3px, rgb(143, 145, 139) 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+.button-30:active {
+    transition: box-shadow 0.15s ease, transform 0.1s ease;
+    box-shadow: #458536 0 3px 7px inset;
+    transform: translateY(1px);
+}
+
+h3 {
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: rgb(12, 15, 2);
+}
+
+.seta {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(12, 15, 2); 
+    margin-bottom: 50px;
+}
+
+.habilidades {
+    display: flex;
+}
+
+.Hab1, .Hab2, .Hab3 {
+    border: rgb(12, 15, 2) solid 2px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+    width: 400px;
+    height: 350px;
+}
+
+.Hab1 {
+    margin-right: -60px;
+}
+
+.Hab3 {
+    margin-left: -60px;
+}
+.habTexto1 {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.habTexto {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.pincel {
+    margin-top: 30px;
+    width: 40px;
+    transition: 0.2s;
+    fill: rgb(12, 15, 2); /* se for SVG inline */
+}
+.pincel:hover {
+    transform: scale(1.1,1.1);
+}
+
+.instagram,
+.github,
+.linkedin{
+    width: 40px;
+    color: rgb(73, 66, 66);
+    transition: color 0.2s;
+}
+
+.instagram:hover,
+.github:hover,
+.linkedin:hover{
+    color: rgb(27, 25, 25);
+}
+
+
+.music-player {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(46,139,74,0.12); /* leve, combina com o tema */
+    backdrop-filter: blur(6px);
+    padding: 8px 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    width: min(360px, 92%);
+    max-width: 380px;
+    color: #0c0f02;
+}
+
+.music-player .thumb {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    object-fit: cover;
+    flex: 0 0 48px;
+    border: 2px solid rgba(255,255,255,0.06);
+}
+
+.music-player .meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+}
+
+.music-player .title {
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #08320f;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.play {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: #2e8b4a; /* cor do botão (não branco) */
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-grid;
+    place-items: center;
+    box-shadow: 0 4px 10px rgba(46,139,74,0.28);
+    transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.play:active { transform: scale(.96); }
+
+/* animação quando tocando */
+.play.playing {
+    animation: pulse 1.2s infinite;
+    box-shadow: 0 6px 18px rgba(46,139,74,0.34);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+/* progresso fino e discreto */
+.progress {
+    flex: 1;
+    height: 6px;
+    background: rgba(12,15,2,0.06);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress .bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #9ff0b4, #2e8b4a);
+    transition: width .08s linear;
+}
+
+/* responsivo — reduz em telas pequenas */
+@media (max-width: 420px) {
+    .music-player { right: 10px; left: 10px; padding: 8px; }
+    .music-player .thumb { width: 42px; height: 42px; }
+    .play { width: 34px; height: 34px; }
+    .title { font-size: 12px; }
+}
+
+/* escondemos o player nativo */
+.music-player audio {
+    display: none;
+}
+
+/* controles custom */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.play {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    color: #2b7b3a;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.progress {
+    flex: 1;
+    height: 8px;
+    background: rgba(255,255,255,0.18);
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress .bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #fff;
+    border-radius: 6px;
+    transition: width 0.1s linear;
+}
+
+.time {
+    font-size: 13px;
+    min-width: 90px;
+    text-align: right;
+}
+
+/* título completo com ellipsis quando pequeno */
+.title {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* responsivo */
+@media (max-width: 480px) {
+    .music-player { left: 8px; right: 8px; padding: 8px; }
+    .music-player img { width: 52px; height: 52px; flex: 0 0 52px; }
+    .play { width: 36px; height: 36px; }
+    .time { min-width: 60px; font-size: 12px; }
+}
+
+/* Contacts footer clean style */
+footer { padding: 28px 18px 40px; }
+footer hr { opacity: 0.12; margin-bottom: 14px; border: none; height: 1px; background: rgba(12,15,2,0.08); }
+
+.contacts { text-align: center; max-width: 760px; margin: 0 auto; }
+.contacts h3 { margin: 0 0 12px; font-size: 20px; color: rgb(12,15,2); }
+
+.contact-icons { display: flex; gap: 16px; justify-content: center; align-items: center; margin-top: 6px; }
+
+.contact {
+    display: inline-grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.92);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
+    color: #222;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.contact .icon { width: 26px; height: 26px; display: block; }
+.contact svg { width: 26px; height: 26px; fill: #333; }
+
+.contact:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    background: linear-gradient(180deg, #ffffff, #f6fff6);
+}
+
+/* opções menores em telas reduzidas */
+@media (max-width: 420px) {
+    .contact { width: 48px; height: 48px; border-radius: 10px; }
+    .contact svg { width: 22px; height: 22px; }
+}

@@ -1,2 +1,3 @@
 function goEnsinoMedio() {
-window.location.href = "../EnsinoMedio.html"}
+    window.location.href = "/EnsinoMedio/EnsinoMedio.html";
+}
